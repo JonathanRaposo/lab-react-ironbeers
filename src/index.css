@@ -41,11 +41,22 @@ img {
 .each-beer-container {
   max-width: 400px;
   display: flex;
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
   padding: 20px 30px;
   border: 1px solid lightgrey;
   border-radius: 8px;
   box-shadow: 1px 1px 8px lightgrey;
+}
+
+nav {
+  max-width: 421px;
+  border-radius: 2px;
+  padding: 20px;
+  background-color: lightblue;
+  margin-top: 20px;
+  margin-left: 20px;
+
+
 }
 
 .each-beer-container img {
@@ -68,12 +79,13 @@ img {
 }
 
 .one-beer-container {
-  max-width: 300px;
-  margin: 10px;
+  max-width: 450px;
+  margin: 0px 20px 20px 20px;
   padding: 5px;
   border-radius: 8px;
   box-shadow: 1px 1px 8px lightgrey;
+}
 
-
-
+#details-nav {
+  max-width: 300px;
 }

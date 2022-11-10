@@ -1,5 +1,6 @@
  import {Link, useParams} from 'react-router-dom';
  import {useState, useEffect} from 'react';
+ import Navbar from '../components/Navbar';
 //  import axios from 'axios';
 
 
@@ -33,6 +34,8 @@ function BeerDetailsPage({beers}){
              
            <div>
               {!foundBeer && <h3>Beer not found!</h3>}
+              <Navbar id="details-nav"/>
+
               {foundBeer && (
                 <div className='one-beer-container'>
                    <img src={foundBeer.image_url} alt="beer" className='each-bear-img'/>

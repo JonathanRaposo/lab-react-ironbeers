@@ -1,5 +1,6 @@
  import {useState, useEffect} from 'react';
  import axios from 'axios';
+ import Navbar from '../components/Navbar';
 
 function RandomBeer(){
     const [randomBeer, setRandomBeer] = useState(null);
@@ -20,6 +21,7 @@ function RandomBeer(){
     return (
          
           <div>
+              <Navbar/>
               {/* {!randomBeer && <h3>Beer not found!</h3>} */}
               {randomBeer && (
                 <div className='one-beer-container'>

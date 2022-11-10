@@ -1,11 +1,14 @@
 import {Link} from 'react-router-dom';
+ import Navbar from '../components/Navbar';
 function AllBeersPage({beers}){
     
  
     return(
           <div>
+              <Navbar/>
               {beers.map( (beer) => {
                 return(
+                    
                     
                     <div key={beer._id} className="each-beer-container">
                     <img src={beer.image_url} alt="beer" className="each-bear-img"/>
