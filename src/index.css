@@ -80,12 +80,74 @@ nav {
 
 .one-beer-container {
   max-width: 450px;
+
   margin: 0px 20px 20px 20px;
   padding: 5px;
   border-radius: 8px;
   box-shadow: 1px 1px 8px lightgrey;
 }
 
-#details-nav {
-  max-width: 300px;
+/* .one-beer-container h3,
+h4 {
+  text-align: left;
+}
+
+.attenuation-level {
+  display: flex;
+} */
+
+.one-beer-container img {
+  padding-top: 40px;
+}
+
+/*  form styles */
+
+
+
+form {
+  margin: 0px 20px 20px 20px;
+  max-width: 440px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px lightgrey;
+
+}
+
+label {
+  /* max-width: 290px; */
+  display: block;
+  font-weight: 500;
+}
+
+input {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 7px;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  outline: none;
+}
+
+textarea {
+  border-radius: 20px;
+  border: 1px solid lightgrey;
+  outline: none;
+}
+
+.add-new-beer-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 8px 30px;
+  width: 200px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  background-color: lightblue;
+  transition: background-color .15s;
+
+}
+
+.add-new-beer-btn:hover {
+  background-color: #ebc263;
+  color: #fff;
 }

@@ -5,7 +5,8 @@ function AllBeersPage({beers}){
  
     return(
           <div>
-              <Navbar/>
+          {beers && <Navbar/>}
+              {!beers && <p>No Beers Found</p>}
               {beers.map( (beer) => {
                 return(
                     

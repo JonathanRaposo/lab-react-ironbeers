@@ -6,7 +6,13 @@ import {Routes, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AllBeersPage from './pages/AllBeersPage';
 import BeerDetailsPage from './pages/BeerDetailsPage';
-import RandomBeer from './pages/RandomBeer';
+import RandomBeerPage from './pages/RandomBeerPage';
+import AddNewBeerPage from './pages/AddNewBeerPage';
+// import SearchBar from './components/Searchbar';
+
+
+
+
 function App() {
 
   const [allBeers, setAllBeers] = useState([]);
@@ -30,7 +36,8 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
        <Route path='/beers' element={<AllBeersPage beers={allBeers}/>}/>
         <Route path='/beers/:beerId' element={<BeerDetailsPage beers={allBeers}/>}/>
-        <Route path='/random-beer' element={<RandomBeer beers={allBeers}/>}/>
+        <Route path='/random-beer' element={<RandomBeerPage beers={allBeers}/>}/>
+        <Route path='/new-beer' element={<AddNewBeerPage />}/>
        </Routes>
         
        

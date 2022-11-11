@@ -2,7 +2,7 @@
  import axios from 'axios';
  import Navbar from '../components/Navbar';
 
-function RandomBeer(){
+function RandomBeerPage(){
     const [randomBeer, setRandomBeer] = useState(null);
 
     const apiURL = "https://ih-beers-api2.herokuapp.com/beers"
@@ -21,7 +21,7 @@ function RandomBeer(){
     return (
          
           <div>
-              <Navbar/>
+              {randomBeer && <Navbar/>}
               {/* {!randomBeer && <h3>Beer not found!</h3>} */}
               {randomBeer && (
                 <div className='one-beer-container'>
@@ -44,4 +44,4 @@ function RandomBeer(){
     );
 }
 
-export default RandomBeer;
+export default RandomBeerPage;

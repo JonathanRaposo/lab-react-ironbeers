@@ -33,8 +33,9 @@ function BeerDetailsPage({beers}){
     return (
              
            <div>
-              {!foundBeer && <h3>Beer not found!</h3>}
-              <Navbar id="details-nav"/>
+             
+             {foundBeer && <Navbar/>}
+             {/* {!foundBeer && <h3>Beer not found!</h3>} */}
 
               {foundBeer && (
                 <div className='one-beer-container'>
@@ -42,8 +43,8 @@ function BeerDetailsPage({beers}){
                    <div>
                    <h3 >{foundBeer.name}</h3>
                     <h4 className="tagline">{foundBeer.tagline}</h4>
-                    <p className='created-by-para'>{foundBeer.first_brewed}</p>
                     <p className='created-by-para attenuation-level' >{foundBeer.attenuation_level}</p>
+                    <p className='created-by-para'>{foundBeer.first_brewed}</p>
                     <p >{foundBeer.description}</p>
                     <p className='created-by-para contributed-by'>{foundBeer.contributed_by}</p>
                    </div>
@@ -57,12 +58,3 @@ function BeerDetailsPage({beers}){
 
 export default BeerDetailsPage;
 
-/*
-name
-tagline
-first_brewed
-attenuation_level
-description
-contributed_by
-
-*/ 
